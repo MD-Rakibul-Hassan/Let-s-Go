@@ -1,0 +1,46 @@
+/* Mulish font form google fonts  */
+@import url('https://fonts.googleapis.com/css2?family=Mulish&display=swap');
+/* Variables for comminly used styles  */
+:root {
+    --common-font : Mulish ;
+    --common-color : #FF5400;
+    --text-color : #5A5A5D;
+}
+/* Global styles for the webpage  */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: var(--common-font);
+}
+/* Max-width of this webpage  */
+.container {
+    max-width: 1200px;
+    width: 100%;
+    margin: 0 auto;
+}
+/* Commonly used buttons  */
+.btn {
+    background-color: var(--common-color);
+    padding: 10px 20px;
+    border-radius: 5px;
+    border: 0;
+    font-size: 1.2rem;
+    font-weight: 800;
+}
+/* Commonly used titles  */
+.titles {
+    color: #131318;
+    font-size: 2.3rem;
+    font-style: normal;
+    font-weight: 800;
+    line-height: normal;
+}
+/* Commonly used decriptions  */
+.decription {
+    color: var(--text-color);
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 26px;
+}
