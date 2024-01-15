@@ -27,6 +27,7 @@
     border: 0;
     font-size: 1.2rem;
     font-weight: 800;
+    color: #fff;
 }
 /* Commonly used titles  */
 .titles {
@@ -145,12 +146,31 @@ nav .nav-logo h1 span {
     height: 50px;
     margin-left: 10px;
 }
+/* Styles for main section  */
+/* Main our tours part  */
+.main .tours {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 50px;
+}
 
-
-
-
-
-
+.main .tours .tour-text {
+    margin-right: 10px;
+    width: 50%;
+}
+.main .tours .tour-text h2,p{
+    margin-bottom: 20px;
+}
+.main .tours .tour-text li {
+    margin: 20px;
+}
+.main .tours .tour-img {
+    width: 50%;
+}
+.main .tours .tour-img img {
+    width: 100%;
+}
 
 
 
@@ -164,7 +184,7 @@ nav .nav-logo h1 span {
 /* Responsive Design for mobile  */
 @media screen and (max-width: 600px) {
     .header {
-        padding: 20px;
+        padding:0 20px;
     }
     /* responsive for nav  */
     .nav-links ul {
@@ -174,9 +194,6 @@ nav .nav-logo h1 span {
         display: block;
     }
     /* responsive for banner  */
-    .header .banner {
-        height: 500px;
-    }
     .banner .banner-text {
         padding-top: 10px;
     }
@@ -188,12 +205,13 @@ nav .nav-logo h1 span {
     }
     .banner .banner-inputs {
         padding: 0 20px;
+        margin-top: 5px;
     }
     .banner .inputs-container {
         text-align: center;
     }
     .banner .inputs-container input,select {
-        margin-top: 20px;
+        margin-top: 10px;
         margin-left: 0;
         width: 100%;
     }
@@ -202,6 +220,28 @@ nav .nav-logo h1 span {
         margin-left: 0;
         width: 100%;
     }
+    /* Our toure part  */
+    .main {
+        padding:20px;
+    }
+    .main .tours {
+        flex-direction: column;
+        margin-top: 20px;
+    }
+    .main .tours .tour-text {
+        margin-bottom: 20px;
+    }
+    .main .tours .tour-img {
+        width: 100%;
+    }
+    .main .tours .tour-img img {
+        width: 100%;
+    }
+    .main .tours .tour-text {
+        margin-right: 10px;
+        width: 100%;
+    }
+    
     
 }
 /* Responsive Design for tablate  */
@@ -245,4 +285,25 @@ nav .nav-logo h1 span {
         margin-left: 0;
         width: 100%;
     }
+        /* Our toure part  */
+        .main {
+            padding:20px;
+        }
+        .main .tours {
+            flex-direction: column;
+            margin-top: 20px;
+        }
+        .main .tours .tour-text {
+            margin-bottom: 20px;
+        }
+        .main .tours .tour-img {
+            width: 100%;
+        }
+        .main .tours .tour-img img {
+            width: 100%;
+        }
+        .main .tours .tour-text {
+            margin-right: 10px;
+            width: 100%;
+        }
 }
