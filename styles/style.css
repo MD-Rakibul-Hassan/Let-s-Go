@@ -280,9 +280,55 @@ nav .nav-logo h1 span {
     display: flex;
     gap: 30px;
 }
-
-
-
+/* Styles for Choose part  */
+.choose {
+    margin-top: 50px;
+    text-align: start;
+}
+.choose .choose-text {
+    text-align: center;
+}
+.choose .choose-text h3 {
+    margin-bottom: 20px;
+}
+.choose .choose-top-part {
+    display: flex;
+}
+.choose .choose-top-part .hotels {
+    width: 573px;
+    height: 284px;
+    padding: 30px 40px;
+    background: rgba(251, 181, 99, 0.05);
+}
+.choose .choose-top-part .hotels img {
+    height: 50px;
+    width: 50px;
+}
+.choose .choose-top-part .hotels h4 {
+    font-size: 1.5rem;
+    margin: 20px 0;
+}
+.choose .choose-top-part .service h4 {
+    font-size: 1.5rem;
+    margin: 20px 0;
+}
+.choose .choose-bottom-part .guarantee h4 {
+    font-size: 1.5rem;
+    margin: 20px 0;
+}
+.choose .choose-top-part .service {
+    width: 573px;
+    height: 284px;
+    padding: 30px 40px;
+    background: rgba(41, 206, 246, 0.05);
+}
+.choose .choose-bottom-part .guarantee {
+    margin: 20px auto;
+    width: 573px;
+    height: 284px;
+    padding: 30px 40px;
+    background: (233, 68, 68, 0.05);
+}
 
 /* Responsive Design for mobile  */
 @media screen and (max-width: 600px) {
@@ -409,7 +455,19 @@ nav .nav-logo h1 span {
         width: 100%;
         height: 100%;
     }
-
+    /* responsive for choose us part  */
+    .choose .choose-top-part {
+        flex-direction: column;
+    }
+    .choose .choose-bottom-part .guarantee {
+        width: 100%;
+    }
+    .choose .choose-top-part .service  {
+        width: 100%;
+    }
+    .choose .choose-top-part .hotels {
+        width: 100%;
+    }
     
 }
 /* Responsive Design for tablate  */
