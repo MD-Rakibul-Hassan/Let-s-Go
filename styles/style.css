@@ -334,6 +334,12 @@ nav .nav-logo h1 span {
 .discounts {
     margin-top: 50px;
 }
+.discounts .pakcges-btn {
+    margin: 30px auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
 
 .discounts .discounts-text {
     text-align: center;
