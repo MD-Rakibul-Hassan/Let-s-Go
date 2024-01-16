@@ -329,6 +329,107 @@ nav .nav-logo h1 span {
     padding: 30px 40px;
     background: (233, 68, 68, 0.05);
 }
+/* Styles for Deals & Discounts part  */
+
+.discounts {
+    margin-top: 50px;
+}
+
+.discounts .discounts-text {
+    text-align: center;
+}
+.discounts .discounts-text h3 {
+    margin: 20px 0;
+}
+.discounts .discount-contents .satorini1 {
+    background-image: url("../Images/Group\ 39.png");
+    background-repeat: no-repeat;
+    min-height: 500px;
+    width: 100%;
+    border-radius: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: end;
+}
+.discounts .discount-contents .satorini2 {
+    background-image: url("../Images/Group\ 39.png");
+    /* background-repeat: no-repeat; */
+    min-height: 500px;
+    width: 97.4%;
+    transform: scaleX(-1);
+    background-size: cover;
+    margin-top: 20px;
+    border-radius: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: end;
+}
+.discounts .discount-contents .satorini3 {
+    background-image: url("../Images/Group\ 39.png");
+    background-repeat: no-repeat;
+    min-height: 500px;
+    width: 100%;
+    margin-top: 20px;
+    border-radius: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: end;
+}
+
+.discounts .discount-contents .satorini1 .satorini-content {
+    min-height: 300px;
+    width: 40%;
+    background-color: rgba(255, 255, 255, 0.80);
+    backdrop-filter: blur(1.5px);
+    margin-right: 70px;
+    border-radius: 16px;
+}
+
+.discounts .discount-contents .satorini2 .satorini-content {
+    min-height: 300px;
+    width: 40%;
+    background-color: rgba(255, 255, 255, 0.80);
+    backdrop-filter: blur(1.5px);
+    margin-right: 70px;
+    transform: rotateX(180deg);
+    transform: rotateY(180deg);
+    border-radius: 16px;
+}
+
+.discounts .discount-contents .satorini3 .satorini-content {
+    min-height: 300px;
+    width: 40%;
+    background-color: rgba(255, 255, 255, 0.80);
+    backdrop-filter: blur(1.5px);
+    margin-right: 70px;
+    margin-right: 70px;
+    border-radius: 16px;
+}
+
+.satorini-content .satorini-icons {
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 20px;
+    color: var(--common-color);
+}
+.satorini-content > h1 {
+    margin: 20px 60px;
+}
+.satorini-content > p {
+    margin: 20px 60px;
+}
+.satorini-content > h5 {
+    margin: 20px 60px;
+}
+.satorini-content > button {
+    margin: 0 60px;
+}
+
+
+
+
+
+
 
 /* Responsive Design for mobile  */
 @media screen and (max-width: 600px) {
@@ -468,7 +569,39 @@ nav .nav-logo h1 span {
     .choose .choose-top-part .hotels {
         width: 100%;
     }
+    /* responsive for Deals & Discounts part  */
+    .discounts .discount-contents .satorini1 .satorini-content {
+        width: 100%;
+    }
     
+    .discounts .discount-contents .satorini2 .satorini-content {
+        width: 100%;
+    }
+    
+    .discounts .discount-contents .satorini3 .satorini-content {
+        width: 100%;
+    }
+    .discounts .discount-contents .satorini1 {
+        justify-content: center;
+    }
+    .discounts .discount-contents .satorini2 {
+        justify-content: end;
+    }
+    .discounts .discount-contents .satorini3 {
+        justify-content: center;
+    }
+    .satorini-content > h1 {
+        margin: 20px;
+    }
+    .satorini-content > p {
+        margin: 20px;
+    }
+    .satorini-content > h5 {
+        margin: 20px;
+    }
+    .satorini-content > button {
+        margin: 20px;
+    }
 }
 /* Responsive Design for tablate  */
 @media screen and (min-width: 600px) and (max-width:992px) {
@@ -596,5 +729,37 @@ nav .nav-logo h1 span {
     .destination-images .third-row .item7 img {
         width: 100%;
         height: 100%;
+    }
+       /* responsive for Deals & Discounts part  */
+       .discounts .discount-contents .satorini1 .satorini-content {
+        width: 100%;
+    }
+    .discounts .discount-contents .satorini2 .satorini-content {
+        width: 100%;
+    }
+    
+    .discounts .discount-contents .satorini3 .satorini-content {
+        width: 100%;
+    }
+    .discounts .discount-contents .satorini1 {
+        justify-content: center;
+    }
+    .discounts .discount-contents .satorini2 {
+        justify-content: end;
+    }
+    .discounts .discount-contents .satorini3 {
+        justify-content: center;
+    }
+    .satorini-content > h1 {
+        margin: 20px;
+    }
+    .satorini-content > p {
+        margin: 20px;
+    }
+    .satorini-content > h5 {
+        margin: 20px;
+    }
+    .satorini-content > button {
+        margin: 20px;
     }
 }
