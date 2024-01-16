@@ -437,7 +437,6 @@ nav .nav-logo h1 span {
 .simple-place .simple-place-text {
     width: 50%;
 }
-
 .simple-place .simple-place-video {
     width: 50%;
     border-radius: 16px;
@@ -447,9 +446,60 @@ nav .nav-logo h1 span {
     height: 100%;
     border-radius: 16px;
 }
-
-
-
+/* style for newsletter part  */
+.newsletter-section {
+    margin-top: 100px;
+}
+.newsletter {
+    display: flex;
+}
+.newsletter .newsletter-text {
+    width: 50%;
+    border: 2px solid red;
+    padding: 20px 40px;
+    border-radius: 16px;
+}
+.newsletter .newsletter-text h3 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+.newsletter .newsletter-text input {
+    width: 100%;
+    height: 75px;
+    margin: 10px 0;
+    border: 0;
+    background-color: rgba(19, 19, 24, 0.05);
+    padding: 0 15px;
+    border-radius: 10px;
+}
+.newsletter .newsletter-text button{
+    width: 100%;
+    height: 75px;
+}
+.newsletter .newsletter-img {
+    margin-left: 10px;
+    height: 100%;
+    position: relative;
+}
+.newsletter .newsletter-img .inner-img-text {
+    position: absolute;
+    bottom: 80px;
+    right: 10px;
+    padding: 20px 40px;
+    background-color: var(--common-color);
+    border-radius: 16px;
+    transform: rotate(-35deg);
+}
+.newsletter .newsletter-img .inner-img-text h3 {
+    font: 1.2rem;
+    color: #fff;
+    text-align: center;
+}
+.newsletter .newsletter-img .inner-img-text h1 {
+    font-size: 2rem;
+    color: #fff;
+    text-align: center;
+}
 
 /* Responsive Design for mobile  */
 @media screen and (max-width: 600px) {
@@ -634,6 +684,29 @@ nav .nav-logo h1 span {
         width: 100%;
         margin-top: 20px;
     }
+    /* responsive for newsletter part  */
+    .newsletter-section {
+        margin-top: 20px;
+    }
+    .newsletter {
+        flex-direction: column;
+    }
+    .newsletter .newsletter-text {
+        width: 100%;
+    }
+    .newsletter .newsletter-img {
+        width: 100%;
+        margin-left: 0px;
+    }
+    .newsletter .newsletter-img img {
+        width: 100%;
+        height: 400px;
+        margin-top: 10px;
+    }
+    .newsletter .newsletter-img .inner-img-text {
+        padding: 10px 20px;
+
+    }
 }
 
 /* Responsive Design for tablate  */
@@ -807,5 +880,25 @@ nav .nav-logo h1 span {
     .simple-place .simple-place-video {
         width: 100%;
         margin-top: 20px;
+    }
+       /* responsive for newsletter part  */
+    .newsletter {
+        flex-direction: column;
+    }
+    .newsletter .newsletter-text {
+        width: 100%;
+    }
+    .newsletter .newsletter-img {
+        width: 100%;
+        margin-left: 0px;
+    }
+    .newsletter .newsletter-img img {
+        width: 100%;
+        height: 400px;
+        margin-top: 10px;
+    }
+    .newsletter .newsletter-img .inner-img-text {
+        padding: 10px 20px;
+
     }
 }
