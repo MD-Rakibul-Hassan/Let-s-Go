@@ -32,7 +32,7 @@
 /* Commonly used titles  */
 .titles {
     color: #131318;
-    font-size: 2.3rem;
+    font-size: 2.5rem;
     font-style: normal;
     font-weight: 800;
     line-height: normal;
@@ -147,23 +147,22 @@ nav .nav-logo h1 span {
     margin-left: 10px;
 }
 /* Styles for main section  */
+
 /* Main our tours part  */
 .main .tours {
     display: flex;
-    align-items: center;
     justify-content: space-between;
     margin-top: 50px;
 }
-
 .main .tours .tour-text {
     margin-right: 10px;
     width: 50%;
 }
 .main .tours .tour-text h2,p{
-    margin-bottom: 20px;
+    margin-bottom: 30px;
 }
 .main .tours .tour-text li {
-    margin: 20px;
+    margin: 25px 20px;
 }
 .main .tours .tour-img {
     width: 50%;
@@ -171,12 +170,116 @@ nav .nav-logo h1 span {
 .main .tours .tour-img img {
     width: 100%;
 }
+/* Styles for Choose Your Destination part */
 
-
-
-
-
-
+.destination-container {
+    margin-top: 50px;
+}
+.destination-text {
+    text-align: center;
+}
+.destination-images .first-row {
+    display: flex;
+}
+.destination-images .first-row .item1,.item2 {
+    width: 50%;
+}
+.first-row .item1 {
+    position: relative;
+}
+.first-row .item1 h3 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #fff;
+    font-size: 2rem;
+}
+.first-row .item2 {
+    position: relative;
+}
+.first-row .item2 h3 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #fff;
+    font-size: 2rem;
+}
+.second-row .item3 {
+    position: relative;
+}
+.second-row .item3 h3 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #fff;
+    font-size: 2rem;
+}
+.second-row .item4 {
+    position: relative;
+}
+.second-row .item4 h3 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #fff;
+    font-size: 2rem;
+}
+.second-row .item5 {
+    position: relative;
+}
+.second-row .item5 h3 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #fff;
+    font-size: 2rem;
+}
+.third-row .item6 {
+    position: relative;
+}
+.third-row .item6 h3 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #fff;
+    font-size: 2rem;
+}
+.third-row .item7 {
+    position: relative;
+}
+.third-row .item7 h3 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #fff;
+    font-size: 2rem;
+}
+.destination-images .second-row {
+    margin-top: 10px;
+    display: flex;
+    gap: 30px;
+}
+.destination-images .second-row .item3 {
+    width: 30%;
+}
+.destination-images .second-row .item4 {
+    width: 40%;
+}
+.destination-images .second-row .item5 {
+    width: 25%;
+}
+.destination-images .third-row {
+    margin-top: 20px;
+    display: flex;
+    gap: 30px;
+}
 
 
 
@@ -241,7 +344,72 @@ nav .nav-logo h1 span {
         margin-right: 10px;
         width: 100%;
     }
-    
+    /* responsive for Choose Your Destination part */
+    .destination-container {
+        margin-top: 20px;
+        padding: 0 20px;
+    }
+     .first-row,.second-row,.third-row{
+        flex-direction: column;
+    }
+    .destination-images .first-row .item1,.item2 {
+        width: 100%;
+        height: 170px;
+    }
+    .destination-images .first-row .item2 {
+        width: 100%;
+        height: 170px;
+        margin-top: 20px;
+    }
+    .destination-images .first-row .item1 img {
+        width: 100%;
+        height: 100%;
+    }
+    .destination-images .first-row .item2 img {
+        width: 100%;
+        height: 100%;
+    }
+    .destination-images .second-row .item3 {
+        width: 100%;
+        height: 170px;
+    }
+    .destination-images .second-row .item4 {
+        width: 100%;
+        height: 170px;
+    }
+    .destination-images .second-row .item5 {
+        width: 100%;
+        height: 170px;
+    }
+    .destination-images .second-row .item3 img {
+        width: 100%;
+        height: 100%;
+    }
+    .destination-images .second-row .item4 img {
+        width: 100%;
+        height: 170px;
+    }
+    .destination-images .second-row .item5 img {
+        width: 100%;
+        height: 100%;
+    }
+    .destination-images .third-row .item6 {
+        width: 100%;
+        height: 170px;
+    }
+    .destination-images .third-row .item6 img {
+        width: 100%;
+        height: 100%;
+    }
+    .destination-images .third-row .item7 {
+        width: 100%;
+        height: 170px;
+    }
+    .destination-images .third-row .item7 img {
+        width: 100%;
+        height: 100%;
+    }
+
     
 }
 /* Responsive Design for tablate  */
@@ -285,25 +453,90 @@ nav .nav-logo h1 span {
         margin-left: 0;
         width: 100%;
     }
-        /* Our toure part  */
-        .main {
-            padding:20px;
-        }
-        .main .tours {
-            flex-direction: column;
-            margin-top: 20px;
-        }
-        .main .tours .tour-text {
-            margin-bottom: 20px;
-        }
-        .main .tours .tour-img {
-            width: 100%;
-        }
-        .main .tours .tour-img img {
-            width: 100%;
-        }
-        .main .tours .tour-text {
-            margin-right: 10px;
-            width: 100%;
-        }
+    /* Our toure part  */
+    .main {
+        padding:20px;
+    }
+    .main .tours {
+        flex-direction: column;
+        margin-top: 20px;
+    }
+    .main .tours .tour-text {
+        margin-bottom: 20px;
+    }
+    .main .tours .tour-img {
+        width: 100%;
+    }
+    .main .tours .tour-img img {
+        width: 100%;
+    }
+    .main .tours .tour-text {
+        margin-right: 10px;
+        width: 100%;
+    }
+    /* responsive for Choose Your Destination part */
+    .destination-container {
+        margin-top: 20px;
+        padding: 0 20px;
+    }
+     .first-row,.second-row,.third-row{
+        flex-direction: column;
+    }
+    .destination-images .first-row .item1,.item2 {
+        width: 100%;
+        height: 170px;
+    }
+    .destination-images .first-row .item2 {
+        width: 100%;
+        height: 170px;
+        margin-top: 20px;
+    }
+    .destination-images .first-row .item1 img {
+        width: 100%;
+        height: 100%;
+    }
+    .destination-images .first-row .item2 img {
+        width: 100%;
+        height: 100%;
+    }
+    .destination-images .second-row .item3 {
+        width: 100%;
+        height: 170px;
+    }
+    .destination-images .second-row .item4 {
+        width: 100%;
+        height: 170px;
+    }
+    .destination-images .second-row .item5 {
+        width: 100%;
+        height: 170px;
+    }
+    .destination-images .second-row .item3 img {
+        width: 100%;
+        height: 100%;
+    }
+    .destination-images .second-row .item4 img {
+        width: 100%;
+        height: 170px;
+    }
+    .destination-images .second-row .item5 img {
+        width: 100%;
+        height: 100%;
+    }
+    .destination-images .third-row .item6 {
+        width: 100%;
+        height: 170px;
+    }
+    .destination-images .third-row .item6 img {
+        width: 100%;
+        height: 100%;
+    }
+    .destination-images .third-row .item7 {
+        width: 100%;
+        height: 170px;
+    }
+    .destination-images .third-row .item7 img {
+        width: 100%;
+        height: 100%;
+    }
 }
